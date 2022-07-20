@@ -1,0 +1,12 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: consumer-client
+  cloud:
+    discovery:
+      server-addr: 127.0.0.1:8848
+
+#消费者 将要访问的微服务名称， 注册成功的nacos 的nacos 的提供者
+servie-url:
+  nacos-user-service: http://nacos-provider
